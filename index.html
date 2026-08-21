@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Estrelai — IA que responde aos reviews do teu restaurante</title>
+<meta name="description" content="O Estrelai liga-se ao Google Business Profile do teu restaurante, café ou bar, escreve respostas aos reviews com IA em português, e só publica quando tu aprovas." />
+<style>
+:root {
+  --bg: oklch(0.985 0.002 75);
+  --fg: oklch(0.18 0 0);
+  --card: white;
+  --muted: oklch(0.95 0.005 75);
+  --muted-fg: oklch(0.52 0.01 75);
+  --border: oklch(0.9 0.006 75);
+  --border-strong: oklch(0.82 0.008 75);
+  --accent: oklch(0.72 0.12 75);
+  --accent-fg: oklch(0.18 0 0);
+  --radius-lg: 14px;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--font-sans); background: var(--bg); color: var(--fg); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; }
+.brand { font-size: 18px; font-weight: 700; letter-spacing: -0.03em; text-decoration: none; color: var(--fg); }
+.brand .star { color: var(--accent); }
+.hero { text-align: center; padding: 72px 0 56px; }
+.hero h1 { font-size: clamp(32px, 5vw, 52px); font-weight: 700; letter-spacing: -0.04em; line-height: 1.12; }
+.hero h1 em { font-style: normal; color: var(--accent); }
+.hero p { font-size: 18px; color: var(--muted-fg); max-width: 560px; margin: 20px auto 32px; }
+.btn { display: inline-block; background: var(--fg); color: white; font-size: 15px; font-weight: 600; padding: 13px 26px; border-radius: 999px; text-decoration: none; letter-spacing: -0.01em; }
+.btn:hover { opacity: 0.88; }
+.note { font-size: 13px; color: var(--muted-fg); margin-top: 14px; }
+section { padding: 56px 0; }
+h2 { font-size: clamp(24px, 3vw, 32px); font-weight: 700; letter-spacing: -0.03em; text-align: center; margin-bottom: 40px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 24px 22px; }
+.card h3 { font-size: 15.5px; font-weight: 600; letter-spacing: -0.02em; margin-bottom: 8px; }
+.card p { font-size: 14px; color: var(--muted-fg); }
+.card .ico { font-size: 22px; margin-bottom: 12px; display: block; }
+.steps { max-width: 640px; margin: 0 auto; }
+.step { display: flex; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--border); }
+.step:last-child { border-bottom: none; }
+.step .n { flex-shrink: 0; width: 30px; height: 30px; border-radius: 50%; background: var(--fg); color: white; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; }
+.step h3 { font-size: 15px; font-weight: 600; letter-spacing: -0.02em; }
+.step p { font-size: 14px; color: var(--muted-fg); }
+footer { border-top: 1px solid var(--border); padding: 32px 0; text-align: center; font-size: 13px; color: var(--muted-fg); }
+footer a { color: var(--muted-fg); }
+@media (max-width: 600px) { .hero { padding-top: 40px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <a class="brand" href="#"><span class="star">★</span> estrelai</a>
+    <a class="btn" style="background:transparent;color:var(--fg);border:1px solid var(--border-strong);font-weight:500;" href="mailto:rocktech.digitalsolutions@gmail.com">Contacto</a>
+  </nav>
+
+  <header class="hero">
+    <h1>Os reviews do teu restaurante, respondidos <em>em minutos</em>, não em dias.</h1>
+    <p>O Estrelai liga-se ao Google Business Profile, escreve respostas profissionais com IA — em português de Portugal e do Brasil — e publica só quando tu aprovas.</p>
+    <a class="btn" href="mailto:rocktech.digitalsolutions@gmail.com">Pedir acesso antecipado</a>
+    <p class="note">Beta privado · Grátis durante o período experimental</p>
+  </header>
+
+  <section>
+    <h2>Como funciona</h2>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><div><h3>Liga a tua conta Google</h3><p>Conectas o Google Business Profile do teu negócio em segundos, com a tua autorização explícita.</p></div></div>
+      <div class="step"><div class="n">2</div><div><h3>A IA escreve os rascunhos</h3><p>Cada review novo recebe uma resposta à medida — no tom de voz do teu estabelecimento, educada e profissional.</p></div></div>
+      <div class="step"><div class="n">3</div><div><h3>Tu aprovas, nós publicamos</h3><p>Revê, edita ou aprova com um clique. As respostas são publicadas diretamente no Google, sempre com o teu controlo.</p></div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Feito para restaurantes, cafés e bares</h2>
+    <div class="grid">
+      <div class="card"><span class="ico">⭐</span><h3>Reviews 4–5 estrelas</h3><p>Agradecimentos personalizados que fazem o cliente voltar — opcionalmente com auto-aprovação.</p></div>
+      <div class="card"><span class="ico">🛠️</span><h3>Reviews negativas</h3><p>Respostas calmas e construtivas, redigidas com cuidado, sempre com a tua revisão antes de publicar.</p></div>
+      <div class="card"><span class="ico">🇵🇹</span><h3>Português a sério</h3><p>Respostas em PT-PT e PT-BR naturais, nada de traduções robóticas.</p></div>
+      <div class="card"><span class="ico">🔒</span><h3>Os teus dados, protegidos</h3><p>Acesso apenas ao que autorizaste. Podes desligar a qualquer momento.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Porquê responder aos reviews?</h2>
+    <div class="grid">
+      <div class="card"><h3>mais clientes</h3><p>Estabelecimentos que respondem a reviews convertem mais quem os descobre no Google Maps e na Pesquisa.</p></div>
+      <div class="card"><h3>melhor posição</h3><p>A atividade e as respostas contribuem para a visibilidade do teu perfil no Google.</p></div>
+      <div class="card"><h3>menos tempo perdido</h3><p>Deixa de escrever respostas à mão às 23h depois do serviço. O Estrelai trata do rascunho.</p></div>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Estrelai</strong> — um produto da <a href="mailto:rocktech.digitalsolutions@gmail.com">Rocktech Digital Solutions</a></p>
+    <p style="margin-top:6px;">rocktech.digitalsolutions@gmail.com</p>
+  </footer>
+</div>
+</body>
+</html>
